@@ -21,14 +21,21 @@
 
     </div>
     <div id="right">
-        <h3>💗100%💗</h3>
+        <h3>💗100%💗 <h3 id="clock"> </h3>
+        </h3>
         <p>Lililikeuuu</p>
         <hr />
         <img src="IPAD壁纸.png" />
         <p>ぺмêī次自拍︺都襘髮哯自己顏ィ直忽縞忽低→ 一會美，一會更美，眞滴好沒意思 ︴😍❤️</p>
 
     </div>
-
+    <script>
+        function time_display() {
+            let time = new Date()
+            document.getElementById("clock").innerText = time.getHours() + "点" + time.getMinutes() + "分" + time.getSeconds() + "了，你吃饭没？"
+        }
+        setInterval(time_display,1000);
+    </script>
 </body>
 <style>
     #header {
